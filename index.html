@@ -80,13 +80,23 @@
     }
 
     .card {
+      display: block;
       background: rgb(255, 255, 255);
       padding: 28px;
       border-radius: 16px;
       max-width: 280px;
       flex: 1 1 220px;
       box-shadow: 0 5px 24px #1720330a;
-    }
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+     }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px #17203320;
+     }
 
     .card h2 {
       font-size: 20px;
@@ -134,12 +144,12 @@
       <div id="message"></div>
     </section>
 
-    <section class="features" id="features">
-     <button onclick="window.location.href='https://docs.google.com/spreadsheets/d/1HuLjTcNBY-YoehpFQxHp4dEBiKaVPphDhV4Ktchd1LA/edit?gid=0#gid=0'">
-        <h2>Seed Values</h2>
-        <p>Check values for individual seeds and track their growth.</p>
-      </button>
+    <a href="https://example.com" class="card">
+      <h2>Seed Values</h2>
+      <p>Check values for individual seeds and track their growth.</p>
+    </a>
 
+    
       <div class="card">
         <h2>Pet Values</h2>
         <p>Check pet values and their stats.</p>
